@@ -1,377 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy Spa</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <style>
-    /* === BUSINESS DETAILS === */
-    .business-details {
-      background: #f8f9fa;
-      padding: 3rem 2rem;
-      text-align: center;
-      border-top: 1px solid #ddd;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Mandy Spa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* === BUSINESS DETAILS === */
+      .business-details {
+        background: #f8f9fa;
+        padding: 3rem 2rem;
+        text-align: center;
+        border-top: 1px solid #ddd;
+      }
 
-    .business-details h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      color: #2c3e50;
-      font-family: "Playfair Display", serif;
-    }
+      .business-details h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #2c3e50;
+        font-family: "Playfair Display", serif;
+      }
 
-    .business-info {
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: left;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
+      .business-info {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: left;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
 
-    .business-info p {
-      margin-bottom: 0.8rem;
-      font-size: 1rem;
-      color: #555;
-    }
+      .business-info p {
+        margin-bottom: 0.8rem;
+        font-size: 1rem;
+        color: #555;
+      }
 
-    .business-info strong {
-      color: #007b5e;
-    }
-  </style>
-</head>
-<body>
-
-  <div id="welcomeModal" class="modal">
-    <div class="modal-content luxurious">
-      <span class="close">&times;</span>
-      <h2
-        data-en="Welcome to The Thai Spa Center"
-        data-jp="タイスパセンターへようこそ"
-      >
-        Welcome to Happy Spa
-      </h2>
-      <p
-        data-en="Indulge in luxury and rejuvenation. Experience tranquility, wellness, and pampering at our serene spa."
-        data-jp="贅沢と若返りをお楽しみください。静かなスパで、心身のリラクゼーションとウェルネスを体験できます。"
-      >
-        Indulge in luxury and rejuvenation. Experience tranquility, wellness, and pampering at our serene spa.
-      </p>
-      <button
-        id="modalCloseBtn"
-        class="btn"
-        data-en="Explore Now"
-        data-jp="今すぐ体験"
-      >
-        Explore Now
-      </button>
-    </div>
-  </div>
-
-  <!-- HEADER -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Happy Spa</div>
-
-      <!-- Hamburger Button (mobile only) -->
-      <button class="hamburger" id="hamburger">&#9776;</button>
-      
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home" data-key="home">Home</a></li>
-        <li><a href="#services" data-key="services">Services</a></li>
-        <li><a href="#about" data-key="about">About</a></li>
-        <li><a href="#contact" data-key="contact">Contact</a></li>
-      </ul>
-      
-      <!-- Language Toggle Button -->
-      <button id="langBtn" class="btn">japaneese</button>
-    </nav>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1 data-key="heroHeading">Relax, Rejuvenate, Renew</h1>
-        <p data-key="heroText">Experience luxury and tranquility at Happy Spa center. Your wellness journey begins here.</p>
-        <a href="#services" class="btn" data-key="heroBtn">Explore Services</a>
-      </div>
-      <div class="hero-image">
-        <img src="https://content.jdmagicbox.com/v2/comp/delhi/b7/011pxx11.xx11.211227111237.r9b7/catalogue/the-amazing-aura-moti-nagar-delhi-body-massage-centres-xwwv811knb.jpg" alt="Couple Spa Room"/>
+      .business-info strong {
+        color: #007b5e;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcomeModal" class="modal">
+      <div class="modal-content luxurious">
+        <span class="close">&times;</span>
+        <h2
+          data-en="Welcome to Happy Mandy Spa"
+          data-jp="タイスパセンターへようこそ"
+        >
+          Welcome to Happy Mandy Spa
+        </h2>
+        <p
+          data-en="Indulge in luxury and rejuvenation. Experience tranquility, wellness, and pampering at our serene spa."
+          data-jp="贅沢と若返りをお楽しみください。静かなスパで、心身のリラクゼーションとウェルネスを体験できます。"
+        >
+          Indulge in luxury and rejuvenation. Experience tranquility, wellness,
+          and pampering at our serene spa.
+        </p>
+        <button
+          id="modalCloseBtn"
+          class="btn"
+          data-en="Explore Now"
+          data-jp="今すぐ体験"
+        >
+          Explore Now
+        </button>
       </div>
     </div>
-  </section>
 
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <h2 data-key="ourServices">Our Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <img src="https://media.post.rvohealth.io/wp-content/uploads/2025/07/young-man-receiving-body-back-massage-at-spa-1200x628-facebook.jpg" alt="Massage Therapy">
-        <h3 data-key="service1Title">Massage Therapy</h3>
-        <p data-key="service1Text">Relaxing massages to relieve stress and rejuvenate your body.</p>
-      </div>
-      <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCEdccpQp0v14cl4NBud8JDBOJJXtd2TW7A&s" alt="Facial Treatments">
-        <h3 data-key="service2Title">Facial Treatments</h3>
-        <p data-key="service2Text">Luxurious facials for glowing, healthy skin.</p>
-      </div>
-      <div class="card">
-        <img src="https://www.coolaromaspa.com/wp-content/uploads/2013/08/body-scrub.jpg" alt="Body Scrubs">
-        <h3 data-key="service3Title">Body Scrubs</h3>
-        <p data-key="service3Text">Exfoliating scrubs to refresh and renew your skin.</p>
-      </div>
-      <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5odadONgdf1RdPKMJT7CWotHbyWE-Ai4sLQ&s" alt="Aromatherapy">
-        <h3 data-key="service4Title">Aromatherapy</h3>
-        <p data-key="service4Text">Healing essential oils to relax your mind and balance your body.</p>
-      </div>
-      <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL2Zi6xAyJZTka1f4yZfq-RFhUpGg5MXC5Pw&s" alt="Hair Spa">
-        <h3 data-key="service5Title">Hair Spa</h3>
-        <p data-key="service5Text">Nourishing treatments to restore shine and strengthen your hair.</p>
-      </div>
-      <div class="card">
-        <img src="https://plus.unsplash.com/premium_photo-1683133390896-6db45575e9a2?q=80&w=1470&auto=format&fit=crop" alt="Couple Spa">
-        <h3 data-key="service6Title">Couple Spa</h3>
-        <p data-key="service6Text">A serene and romantic spa experience for couples.</p>
-      </div>
-    </div>
-  </section>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Happy Mandy Spa</div>
 
-  <!-- ABOUT -->
-  <div class="about" id="about">
-  <div class="about-content">
-    <img class="about-img" src="https://tattvaspa.com/wp-content/uploads/2025/02/wellness.webp" alt="About Spa" />
-    <div class="about-text">
-      <h2 data-key="aboutHeading">About Us</h2>
-      <p data-key="aboutText">
-        At <strong>Happy Spa</strong>, we believe in creating a sanctuary where your mind, body, and soul can truly unwind. 
-        Our luxurious spa combines holistic therapies, cutting-edge treatments, and premium organic products to rejuvenate 
-        every sense. Whether it’s a soothing massage, revitalizing facial, or personalized wellness experience, our expert 
-        therapists ensure every visit is a journey of tranquility and renewal. Discover the perfect blend of serenity, elegance, 
-        and care at Happy Spa — your ultimate escape from the stresses of everyday life.
-      </p>
-    </div>
-  </div>
-</div>
+        <!-- Hamburger Button (mobile only) -->
+        <button class="hamburger" id="hamburger">&#9776;</button>
 
-
-  <section class="gallery" id="gallery">
-  <h2 data-key="galleryHeading">Our Spa & Gallery</h2>
-  <p data-key="galleryText">Take a glimpse at our serene spaces and luxurious treatments.</p>
-  
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="https://tattvaspa.com/wp-content/uploads/2025/02/experience-spa.webp" alt="Spa Room 1"/>
-    </div>
-    <div class="gallery-item">
-      <img src="https://tattvaspa.com/wp-content/uploads/2025/02/Massages.webp" alt="Spa Room 2"/>
-    </div>
-    <div class="gallery-item">
-      <img src="https://tattvaspa.com/wp-content/uploads/2025/02/Beauty-elixirs.webp" alt="Spa Room 3"/>
-    </div>
-    <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1556760544-74068565f05c?q=80&w=1470&auto=format&fit=crop" alt="Spa Room 4"/>
-    </div>
-    <div class="gallery-item">
-      <img src="https://images.unsplash.com/photo-1605980625600-88b46abafa8d?q=80&w=764&auto=format&fit=crop" alt="Spa Room 5"/>
-    </div>
-    <div class="gallery-item">
-      <img src="https://plus.unsplash.com/premium_photo-1683133390896-6db45575e9a2?q=80&w=1470&auto=format&fit=crop" alt="Spa Room 6"/>
-    </div>
-  </div>
-</section>
-
-
-  <!-- OFFERS -->
-  <section class="offers" id="offers">
-    <h2 data-key="offers">Special Offers</h2>
-    <div class="offer-cards">
-      <div class="offer">
-        <h3 data-key="offer1Title">Relax & Glow Package</h3>
-        <p data-key="offer1Text">Massage + Facial + Aromatherapy</p>
-        <span class="price">₹2999</span>
-      </div>
-      <div class="offer">
-        <h3 data-key="offer2Title">Couple Retreat</h3>
-        <p data-key="offer2Text">Exclusive 2-hour spa for couples</p>
-        <span class="price">₹4999</span>
-      </div>
-      <div class="offer">
-        <h3 data-key="offer3Title">Weekend Rejuvenation</h3>
-        <p data-key="offer3Text">Body Scrub + Head Massage</p>
-        <span class="price">₹1999</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY US -->
-  <section class="why-us" id="why-us">
-    <h2 data-key="whyUs">Why Choose Us</h2>
-    <div class="why-cards">
-      <div class="why-card">
-        <img src="https://img.icons8.com/color/96/spa-flower.png" alt="Relaxing Ambiance"/>
-        <h3 data-key="why1">Relaxing Ambiance</h3>
-      </div>
-      <div class="why-card">
-        <img src="https://images-platform.99static.com/6gEZ2FEqTrnI1yzOOHcd5QQuih8=/104x98:698x692/fit-in/99designs-contests-attachments/95/95645/attachment_95645654" alt="Skilled Therapists"/>
-        <h3 data-key="why2">Skilled Therapists</h3>
-      </div>
-      <div class="why-card">
-        <img src="https://img.icons8.com/color/96/organic-food.png" alt="Organic Products"/>
-        <h3 data-key="why3">Organic Products</h3>
-      </div>
-      <div class="why-card">
-        <img src="https://as1.ftcdn.net/jpg/05/69/90/48/1000_F_569904882_KYieEUuBHBkh8MXoYVtN3yuTw9hFPvgN.webp" alt="Personalized Care"/>
-        <h3 data-key="why4">Personalized Care</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- MEMBERSHIP -->
-  <section class="membership" id="membership">
-    <h2 data-key="membership">Membership Plans</h2>
-    <div class="membership-cards">
-      <div class="plan">
-        <h3 data-key="plan1">Silver</h3>
-        <p data-key="plan1Text">2 therapies / month</p>
-        <span>₹1499</span>
-      </div>
-      <div class="plan">
-        <h3 data-key="plan2">Gold</h3>
-        <p data-key="plan2Text">5 therapies / month</p>
-        <span>₹3999</span>
-      </div>
-      <div class="plan">
-        <h3 data-key="plan3">Platinum</h3>
-        <p data-key="plan3Text">Unlimited access</p>
-        <span>₹7999</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKING -->
-  <section class="booking" id="booking">
-    <div class="booking-content">
-      <h2 data-key="bookingTitle">Book Your Appointment</h2>
-      <p data-key="bookingText">Reserve your spa experience today and indulge in ultimate relaxation.</p>
-      <a href="#contact" class="btn" data-key="bookingBtn">Book Now</a>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <h2 data-key="faq">Frequently Asked Questions</h2>
-    <div class="faq-items">
-      <div class="faq-item">
-        <h3 data-key="faq1Q">Do I need to book in advance?</h3>
-        <p data-key="faq1A">Yes, advance booking is recommended to secure your preferred slot.</p>
-      </div>
-      <div class="faq-item">
-        <h3 data-key="faq2Q">What should I bring?</h3>
-        <p data-key="faq2A">You don’t need to bring anything, we provide all essentials.</p>
-      </div>
-      <div class="faq-item">
-        <h3 data-key="faq3Q">Are your products safe for sensitive skin?</h3>
-        <p data-key="faq3A">Absolutely! We use only premium organic and skin-safe products.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- REASONS SECTION -->
-<section class="reasons" id="reasons">
-  <h2 data-key="reasonsHeading">Top Reasons to Visit Us</h2>
-  <div class="reasons-grid">
-    <div class="reason-card">
-      <h3 data-key="reason1Title">Luxury Spa Ambiance</h3>
-      <p data-key="reason1Text">Immerse yourself in a calming, elegant environment designed for peace.</p>
-    </div>
-    <div class="reason-card">
-      <h3 data-key="reason2Title">Expert Therapists</h3>
-      <p data-key="reason2Text">Our highly trained staff ensures every therapy is safe and effective.</p>
-    </div>
-    <div class="reason-card">
-      <h3 data-key="reason3Title">Organic Treatments</h3>
-      <p data-key="reason3Text">We use only natural, premium products that rejuvenate skin & body.</p>
-    </div>
-    <div class="reason-card">
-      <h3 data-key="reason4Title">Affordable Packages</h3>
-      <p data-key="reason4Text">Enjoy premium spa experiences with pricing tailored to all budgets.</p>
-    </div>
-    <div class="reason-card">
-      <h3 data-key="reason5Title">Couple & Group Offers</h3>
-      <p data-key="reason5Text">Special packages for couples and friends to relax together.</p>
-    </div>
-    <div class="reason-card">
-      <h3 data-key="reason6Title">Convenient Location</h3>
-      <p data-key="reason6Text">Easily accessible in the heart of the city for your quick getaways.</p>
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- NEWSLETTER -->
-  <section class="newsletter" id="contact ">
-    <h2 data-key="newsletter">Subscribe to Our Newsletter</h2>
-    <p data-key="newsletterText">Get updates on exclusive offers and new therapies.</p>
-    <form class="newsletter-form">
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit" class="btn" data-key="newsletterBtn">Subscribe</button>
-    </form>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <!-- Column 1: About -->
-      <div class="footer-col">
-        <h3>Happy spa</h3>
-        <p data-key="footerAbout">Relax, rejuvenate, and renew at our luxury spa. Experience wellness like never before.</p>
-      </div>
-
-      <!-- Column 2: Quick Links -->
-      <div class="footer-col">
-        <h4 data-key="quickLinks">Quick Links</h4>
-        <ul>
+        <ul class="nav-links" id="navLinks">
           <li><a href="#home" data-key="home">Home</a></li>
           <li><a href="#services" data-key="services">Services</a></li>
           <li><a href="#about" data-key="about">About</a></li>
           <li><a href="#contact" data-key="contact">Contact</a></li>
         </ul>
-      </div>
 
-      <!-- Column 3: Business Details -->
-      <div class="footer-col">
-        <h4 data-key="businessDetails">Business Details</h4>
-        <p><strong>Business Name:</strong> Happy spa LIMITED</p>
-        <p><strong>Director:</strong> Colin Hatt</p>
-        <p><strong>DOB:</strong> 13th July 1967</p>
-        <p><strong>Address:</strong> Nitenite Hotel, 18 Holiday Street, Birmingham, UK, B1 1TB</p>
-      </div>
+        <!-- Language Toggle Button -->
+        <button id="langBtn" class="btn">Japanese</button>
+      </nav>
+    </header>
 
-      <!-- Column 4: Social -->
-      <div class="footer-col">
-        <h4 data-key="followUs">Follow Us</h4>
-        <div class="social-links">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 data-key="heroHeading">Relax, Rejuvenate, Renew</h1>
+          <p data-key="heroText">
+            Experience luxury and tranquility at Happy Mandy Spa. Your wellness
+            journey begins here.
+          </p>
+          <a href="#services" class="btn" data-key="heroBtn"
+            >Explore Services</a
+          >
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://content.jdmagicbox.com/v2/comp/delhi/b7/011pxx11.xx11.211227111237.r9b7/catalogue/the-amazing-aura-moti-nagar-delhi-body-massage-centres-xwwv811knb.jpg"
+            alt="Couple Spa Room"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <h2 data-key="ourServices">Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <img
+            src="https://media.post.rvohealth.io/wp-content/uploads/2025/07/young-man-receiving-body-back-massage-at-spa-1200x628-facebook.jpg"
+            alt="Massage Therapy"
+          />
+          <h3 data-key="service1Title">Massage Therapy</h3>
+          <p data-key="service1Text">
+            Relaxing massages to relieve stress and rejuvenate your body.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCEdccpQp0v14cl4NBud8JDBOJJXtd2TW7A&s"
+            alt="Facial Treatments"
+          />
+          <h3 data-key="service2Title">Facial Treatments</h3>
+          <p data-key="service2Text">
+            Luxurious facials for glowing, healthy skin.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://www.coolaromaspa.com/wp-content/uploads/2013/08/body-scrub.jpg"
+            alt="Body Scrubs"
+          />
+          <h3 data-key="service3Title">Body Scrubs</h3>
+          <p data-key="service3Text">
+            Exfoliating scrubs to refresh and renew your skin.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5odadONgdf1RdPKMJT7CWotHbyWE-Ai4sLQ&s"
+            alt="Aromatherapy"
+          />
+          <h3 data-key="service4Title">Aromatherapy</h3>
+          <p data-key="service4Text">
+            Healing essential oils to relax your mind and balance your body.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL2Zi6xAyJZTka1f4yZfq-RFhUpGg5MXC5Pw&s"
+            alt="Hair Spa"
+          />
+          <h3 data-key="service5Title">Hair Spa</h3>
+          <p data-key="service5Text">
+            Nourishing treatments to restore shine and strengthen your hair.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1683133390896-6db45575e9a2?q=80&w=1470&auto=format&fit=crop"
+            alt="Couple Spa"
+          />
+          <h3 data-key="service6Title">Couple Spa</h3>
+          <p data-key="service6Text">
+            A serene and romantic spa experience for couples.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <div class="about" id="about">
+      <div class="about-content">
+        <img
+          class="about-img"
+          src="https://tattvaspa.com/wp-content/uploads/2025/02/wellness.webp"
+          alt="About Spa"
+        />
+        <div class="about-text">
+          <h2 data-key="aboutHeading">About Us</h2>
+          <p data-key="aboutText">
+            At <strong>Happy Mandy Spa</strong>, we believe in creating a
+            sanctuary where your mind, body, and soul can truly unwind. Our
+            luxurious spa combines holistic therapies, cutting-edge treatments,
+            and premium organic products to rejuvenate every sense. Whether it’s
+            a soothing massage, revitalizing facial, or personalized wellness
+            experience, our expert therapists ensure every visit is a journey of
+            tranquility and renewal. Discover the perfect blend of serenity,
+            elegance, and care at Happy Mandy Spa — your ultimate escape from
+            the stresses of everyday life.
+          </p>
         </div>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <p data-key="footer">© 2025 Happy spa. All rights reserved.</p>
-    </div>
-  </footer>
+    <section class="gallery" id="gallery">
+      <h2 data-key="galleryHeading">Our Spa & Gallery</h2>
+      <p data-key="galleryText">
+        Take a glimpse at our serene spaces and luxurious treatments.
+      </p>
 
-  <!-- JS -->
-  <script src="lang.js"></script>
-  <script src="script.js"></script>
-</body>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img
+            src="https://tattvaspa.com/wp-content/uploads/2025/02/experience-spa.webp"
+            alt="Spa Room 1"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://tattvaspa.com/wp-content/uploads/2025/02/Massages.webp"
+            alt="Spa Room 2"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://tattvaspa.com/wp-content/uploads/2025/02/Beauty-elixirs.webp"
+            alt="Spa Room 3"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1556760544-74068565f05c?q=80&w=1470&auto=format&fit=crop"
+            alt="Spa Room 4"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1605980625600-88b46abafa8d?q=80&w=764&auto=format&fit=crop"
+            alt="Spa Room 5"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1683133390896-6db45575e9a2?q=80&w=1470&auto=format&fit=crop"
+            alt="Spa Room 6"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFERS -->
+    <section class="offers" id="offers">
+      <h2 data-key="offers">Special Offers</h2>
+      <div class="offer-cards">
+        <div class="offer">
+          <h3 data-key="offer1Title">Relax & Glow Package</h3>
+          <p data-key="offer1Text">Massage + Facial + Aromatherapy</p>
+          <span class="price">¥5,100</span>
+        </div>
+        <div class="offer">
+          <h3 data-key="offer2Title">Couple Retreat</h3>
+          <p data-key="offer2Text">Exclusive 2-hour spa for couples</p>
+          <span class="price">¥8,500</span>
+        </div>
+        <div class="offer">
+          <h3 data-key="offer3Title">Weekend Rejuvenation</h3>
+          <p data-key="offer3Text">Body Scrub + Head Massage</p>
+          <span class="price">¥3,400</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-us" id="why-us">
+      <h2 data-key="whyUs">Why Choose Us</h2>
+      <div class="why-cards">
+        <div class="why-card">
+          <img
+            src="https://img.icons8.com/color/96/spa-flower.png"
+            alt="Relaxing Ambiance"
+          />
+          <h3 data-key="why1">Relaxing Ambiance</h3>
+        </div>
+        <div class="why-card">
+          <img
+            src="https://images-platform.99static.com/6gEZ2FEqTrnI1yzOOHcd5QQuih8=/104x98:698x692/fit-in/99designs-contests-attachments/95/95645/attachment_95645654"
+            alt="Skilled Therapists"
+          />
+          <h3 data-key="why2">Skilled Therapists</h3>
+        </div>
+        <div class="why-card">
+          <img
+            src="https://img.icons8.com/color/96/organic-food.png"
+            alt="Organic Products"
+          />
+          <h3 data-key="why3">Organic Products</h3>
+        </div>
+        <div class="why-card">
+          <img
+            src="https://as1.ftcdn.net/jpg/05/69/90/48/1000_F_569904882_KYieEUuBHBkh8MXoYVtN3yuTw9hFPvgN.webp"
+            alt="Personalized Care"
+          />
+          <h3 data-key="why4">Personalized Care</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMBERSHIP -->
+    <section class="membership" id="membership">
+      <h2 data-key="membership">Membership Plans</h2>
+      <div class="membership-cards">
+        <div class="plan">
+          <h3 data-key="plan1">Silver</h3>
+          <p data-key="plan1Text">2 therapies / month</p>
+          <span>¥2,600</span>
+        </div>
+        <div class="plan">
+          <h3 data-key="plan2">Gold</h3>
+          <p data-key="plan2Text">5 therapies / month</p>
+          <span>¥6,800</span>
+        </div>
+        <div class="plan">
+          <h3 data-key="plan3">Platinum</h3>
+          <p data-key="plan3Text">Unlimited access</p>
+          <span>¥13,600</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking" id="booking">
+      <div class="booking-content">
+        <h2 data-key="bookingTitle">Book Your Appointment</h2>
+        <p data-key="bookingText">
+          Reserve your spa experience today and indulge in ultimate relaxation.
+        </p>
+        <a href="#contact" class="btn" data-key="bookingBtn">Book Now</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <h2 data-key="faq">Frequently Asked Questions</h2>
+      <div class="faq-items">
+        <div class="faq-item">
+          <h3 data-key="faq1Q">Do I need to book in advance?</h3>
+          <p data-key="faq1A">
+            Yes, advance booking is recommended to secure your preferred slot.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3 data-key="faq2Q">What should I bring?</h3>
+          <p data-key="faq2A">
+            You don’t need to bring anything, we provide all essentials.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3 data-key="faq3Q">Are your products safe for sensitive skin?</h3>
+          <p data-key="faq3A">
+            Absolutely! We use only premium organic and skin-safe products.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REASONS SECTION -->
+    <section class="reasons" id="reasons">
+      <h2 data-key="reasonsHeading">Top Reasons to Visit Us</h2>
+      <div class="reasons-grid">
+        <div class="reason-card">
+          <h3 data-key="reason1Title">Luxury Spa Ambiance</h3>
+          <p data-key="reason1Text">
+            Immerse yourself in a calming, elegant environment designed for
+            peace.
+          </p>
+        </div>
+        <div class="reason-card">
+          <h3 data-key="reason2Title">Expert Therapists</h3>
+          <p data-key="reason2Text">
+            Our highly trained staff ensures every therapy is safe and
+            effective.
+          </p>
+        </div>
+        <div class="reason-card">
+          <h3 data-key="reason3Title">Organic Treatments</h3>
+          <p data-key="reason3Text">
+            We use only natural, premium products that rejuvenate skin & body.
+          </p>
+        </div>
+        <div class="reason-card">
+          <h3 data-key="reason4Title">Affordable Packages</h3>
+          <p data-key="reason4Text">
+            Enjoy premium spa experiences with pricing tailored to all budgets.
+          </p>
+        </div>
+        <div class="reason-card">
+          <h3 data-key="reason5Title">Couple & Group Offers</h3>
+          <p data-key="reason5Text">
+            Special packages for couples and friends to relax together.
+          </p>
+        </div>
+        <div class="reason-card">
+          <h3 data-key="reason6Title">Convenient Location</h3>
+          <p data-key="reason6Text">
+            Easily accessible in the heart of the city for your quick getaways.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter" id="contact ">
+      <h2 data-key="newsletter">Subscribe to Our Newsletter</h2>
+      <p data-key="newsletterText">
+        Get updates on exclusive offers and new therapies.
+      </p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn" data-key="newsletterBtn">
+          Subscribe
+        </button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <!-- Column 1: About -->
+        <div class="footer-col">
+          <h3>Happy Mandy Spa</h3>
+          <p data-key="footerAbout">
+            Relax, rejuvenate, and renew at our luxury spa. Experience wellness
+            like never before.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4 data-key="quickLinks">Quick Links</h4>
+          <ul>
+            <li><a href="#home" data-key="home">Home</a></li>
+            <li><a href="#services" data-key="services">Services</a></li>
+            <li><a href="#about" data-key="about">About</a></li>
+            <li><a href="#contact" data-key="contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Business Details -->
+        <div class="footer-col">
+          <h4 data-key="businessDetails">Business Details</h4>
+          <p><strong>Business Name:</strong> Happy Mandy Spa</p>
+          <p><strong>Director:</strong> Mandy Dee Herrera</p>
+          <p><strong>DOB:</strong> 13th July 1967</p>
+          <p>
+            <strong>Address:</strong> 2610 MERCEDES DR BAKERSFIELD, CA 93313
+          </p>
+        </div>
+
+        <!-- Column 4: Social -->
+        <div class="footer-col">
+          <h4 data-key="followUs">Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-key="footer">© 2025 Happy Mandy Spa. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
